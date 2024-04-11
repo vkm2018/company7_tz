@@ -10,6 +10,7 @@ from apps.market.models import Category, Item
 class IndexView(APIView):
 
     def get(self, request, *args, **kwargs):
+        print(request.user)
         context = {
             'items': Item.objects.all()
 

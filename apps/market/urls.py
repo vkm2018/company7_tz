@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from apps.market.views import IndexView, LikedView
 
+from apps.market.views import IndexView, LikedView
 app_name = 'market'
 
 

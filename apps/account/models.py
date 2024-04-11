@@ -9,4 +9,4 @@ class PhoneNumber(models.Model):
         return f'{self.number}'
 
 class User(AbstractUser):
-    number = models.OneToOneField(PhoneNumber, on_delete=models.CASCADE, null=True)
+    number = models.IntegerField(default=0)
